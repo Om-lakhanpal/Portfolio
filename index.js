@@ -1,22 +1,46 @@
-/* faulty calculator */
+/*
+random name generator 
+*/
 
-let random = Math.random();
-let a = prompt(" first number ");
-let b = prompt("to do");
-let c = prompt(" second number ");
+let random = Math.random() ;
+let first , second , thrid ;
 
-let obj = {
-"+" : "-" ,
-"-" : "*" ,
-"*" : "/" ,
-"/" : "+" ,
+if (random < 0.33) {
+    first = "om";
+} 
+
+else if ( random < 0.66 && random >= 0.33){
+    first = "prince";   
 }
 
-if (random > 0.5 ) {
-    alert (`the result is ${eval( `${a} ${b} ${c}` )}` ) ;
+else{
+   first = "tommy";   
 }
 
-else {
-    b = obj [b]; 
-    alert (`the result is ${eval( `${a} ${b} ${c}` )}` ) ;
+random = Math.random() ;
+if (random < 0.33) {
+    second = "k.";
+} 
+
+else if ( random < 0.66 && random >= 0.33){
+    second = "l.";   
 }
+
+else{
+   second = "r.";   
+}
+
+random = Math.random() ;
+if (random < 0.33) {
+    thrid = "pal";
+} 
+
+else if ( random < 0.66 && random >= 0.33){
+    thrid = "gupta";   
+}
+
+else{
+   thrid = "pitt";   
+}
+
+console.log (`${first} ${second} ${thrid}`)
